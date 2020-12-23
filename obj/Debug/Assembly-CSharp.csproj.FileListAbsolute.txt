@@ -1,0 +1,2 @@
+C:\Users\Oisin Tong\OneDrive - TCDUD.onmicrosoft.com\Game Design-DESKTOP-9RSA1TO\Speech To Text\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Oisin Tong\OneDrive - TCDUD.onmicrosoft.com\Game Design-DESKTOP-9RSA1TO\Speech To Text\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

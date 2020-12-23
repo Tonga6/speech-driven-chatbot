@@ -1,0 +1,2 @@
+C:\Users\Oisin Tong\OneDrive - TCDUD.onmicrosoft.com\Game Design-DESKTOP-9RSA1TO\Speech To Text\obj\Debug\WatsonUnitySDK.csprojAssemblyReference.cache
+C:\Users\Oisin Tong\OneDrive - TCDUD.onmicrosoft.com\Game Design-DESKTOP-9RSA1TO\Speech To Text\obj\Debug\WatsonUnitySDK.csproj.CoreCompileInputs.cache
