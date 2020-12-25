@@ -9,6 +9,7 @@ public class PathModule : SerializedStateMachineBehaviour
     public static GameObject GC;
     [SerializeField] AudioSource player = new AudioSource();
     [SerializeField] bool isFinished, incLoopOnFinish, isInterrupted, isGateway, isWaiting = false;
+    [SerializeField] string setBool;
     [SerializeField] float waitTimer = 4;
     // public bool isInterruptable = true;
     [SerializeField] ClipHandler clipBank;
@@ -19,6 +20,14 @@ public class PathModule : SerializedStateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if(setBool != null){
+            
+            animator.SetBool(Animator.StringToHash(setBool), true);
+            Debug.Log("charitable" + animator.GetBool("charitable"));
+            Debug.Log("pioneer" + animator.GetBool("pioneer"));
+            Debug.Log("loved" + animator.GetBool("loved"));
+            Debug.Log("healthy" + animator.GetBool("healthy"));
+        }
         isFinished = false;
         gameState.clipType = -1;
         GC = GameObject.FindWithTag("GameController");
