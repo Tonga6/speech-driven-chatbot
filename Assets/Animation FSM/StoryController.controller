@@ -1,5 +1,182 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9157399529898675531
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -5601368474178360128}
+  inHandler: {fileID: -6062804968222621871}
+  nextClip: {fileID: 0}
+--- !u!1101 &-8932192392004689676
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 3688778092581629049}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-8777266638496953467
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4181723801111392906}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1102 &-8750650497410925491
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_3 Introspective 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -159885495340796755}
+  m_StateMachineBehaviours:
+  - {fileID: -6103827742967251611}
+  - {fileID: 986094336229977600}
+  - {fileID: 6967951186233349457}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1101 &-8567833069951854943
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4059102062257410692}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-8535889986669118008
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -8294127428377811733}
+  inHandler: {fileID: -7633217107771161750}
+  nextClip: {fileID: 0}
 --- !u!114 &-8515435868169353714
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -33,6 +210,58 @@ MonoBehaviour:
   clipBank: {fileID: -1569295603194911351}
   inHandler: {fileID: 2996738904974154341}
   nextClip: {fileID: 0}
+--- !u!114 &-8294127428377811733
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: ea6ce40a13bda4f1a87742c04a065508, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!1101 &-8274349816629590797
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -61,6 +290,61 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &-8134774815834226756
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3464408206285549182}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1102 &-8033905919430599977
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_1 Irritated
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 7909693348877402174}
+  m_StateMachineBehaviours:
+  - {fileID: -5851396076822857610}
+  - {fileID: 2443834872702432959}
+  - {fileID: 5015134567783356359}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!114 &-8015418657852155493
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -147,6 +431,31 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1101 &-8002286876733020541
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3846014013608298255}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &-7998727376318812280
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -158,6 +467,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isFinished
     m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3028685251703235123}
   m_Solo: 0
@@ -205,7 +517,44 @@ MonoBehaviour:
   clipBank: {fileID: 3162538118803877121}
   inHandler: {fileID: 7568507005423852201}
   nextClip: {fileID: 0}
---- !u!1101 &-7749049918455042492
+--- !u!114 &-7903859007270471952
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!1101 &-7812419021134867389
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,7 +566,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isFinished
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -1703586057288888056}
+  m_DstState: {fileID: -1723800713050681379}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -230,6 +579,153 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &-7752019962120352511
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 1
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 8338792930553565865}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-7636565046993284022
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!114 &-7633217107771161750
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: peaceful
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: introspective
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: lonely
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!1102 &-7605625908114307722
 AnimatorState:
   serializedVersion: 5
@@ -259,39 +755,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &-7582265424109360420
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  player: {fileID: 0}
-  isFinished: 0
-  incLoopOnFinish: 0
-  isInterrupted: 0
-  isGateway: 0
-  isWaiting: 0
-  setBool: 
-  waitTimer: 5
-  clipBank: {fileID: 7481438780935525919}
-  inHandler: {fileID: 6041133488253011422}
-  nextClip: {fileID: 0}
 --- !u!114 &-7426097828512713475
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -395,6 +858,248 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-7307855323219647200
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -39302161981359332}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-7275610832505385804
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 79927f67b1564284bbdf38697b4d7ba4, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!114 &-7234014015749094999
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 483eae14654cd4a10ab18e0ee29444f1, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1102 &-7225097776557684717
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'AA 1_3 Makes You Feel '
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -7043657441417744376}
+  - {fileID: -6780194532861045707}
+  - {fileID: -4886968366106169757}
+  - {fileID: -1098981072597273400}
+  m_StateMachineBehaviours:
+  - {fileID: -7633217107771161750}
+  - {fileID: -8535889986669118008}
+  - {fileID: -8294127428377811733}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!114 &-7095998821530501656
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 685dc35b78252446f80b707d9b38b438, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1101 &-7043657441417744376
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -5275318912761828740}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-6958724114406642469
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -427,6 +1132,39 @@ MonoBehaviour:
   waitTimer: 5
   clipBank: {fileID: -69447221970177402}
   inHandler: {fileID: -339621912349023778}
+  nextClip: {fileID: 0}
+--- !u!114 &-6923343238457428110
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 1373654702055862646}
+  inHandler: {fileID: 9007061234887695830}
   nextClip: {fileID: 0}
 --- !u!114 &-6920200365011885177
 MonoBehaviour:
@@ -480,6 +1218,36 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1102 &-6885960513041059259
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_1 Distracted
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -8134774815834226756}
+  m_StateMachineBehaviours:
+  - {fileID: 2412370719420902992}
+  - {fileID: 5112339758730984099}
+  - {fileID: 4894257897475206478}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &-6824216737165079908
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -496,6 +1264,62 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2620482722775919957}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-6780194532861045707
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -1636603446789387304}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-6676197457695331673
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4059102062257410692}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -538,21 +1362,21 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-6619337881770538429
+--- !u!1102 &-6644738797397824141
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_2 Choices
+  m_Name: AA 1_1 Makes You Feel 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours:
-  - {fileID: 1326629110765681433}
-  - {fileID: 7718856757868164329}
-  - {fileID: -5932115091152840244}
+  - {fileID: -6442894871354542029}
+  - {fileID: -3813047715359152073}
+  - {fileID: 5914528025555548872}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -598,6 +1422,94 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &-6508340354717573284
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_3 Peaceful 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -7307855323219647200}
+  m_StateMachineBehaviours:
+  - {fileID: -3301663292953222295}
+  - {fileID: 262173067411078178}
+  - {fileID: -6196477877094830526}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!114 &-6442894871354542029
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: happy
+    - Name: 
+      Entry: 1
+      Data: wistful
+    - Name: 
+      Entry: 1
+      Data: thankful
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!114 &-6433120044784235447
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -635,6 +1547,210 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!114 &-6315970577129635472
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 08b5d6034d5e2437b83304f9ed9546eb, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!114 &-6299526132216970273
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -1470660907697528859}
+  inHandler: {fileID: -6246231596116719733}
+  nextClip: {fileID: 0}
+--- !u!114 &-6246231596116719733
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!1102 &-6198906851977092822
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_1 Wistful
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 3289806501961487369}
+  m_StateMachineBehaviours:
+  - {fileID: -5483714181096682789}
+  - {fileID: -2100933221314311410}
+  - {fileID: -3684286919990072431}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!114 &-6196477877094830526
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: c711c860456cf499aa44df65d099d763, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!1101 &-6156183877837260113
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -663,6 +1779,43 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-6103827742967251611
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!114 &-6079881742567651198
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -696,6 +1849,83 @@ MonoBehaviour:
   clipBank: {fileID: -1828972561444301917}
   inHandler: {fileID: -7426097828512713475}
   nextClip: {fileID: 0}
+--- !u!114 &-6062804968222621871
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!1101 &-6051591160631278135
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4059102062257410692}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &-5959109882944784249
 AnimatorState:
   serializedVersion: 5
@@ -726,7 +1956,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &-5932115091152840244
+--- !u!114 &-5851396076822857610
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -735,38 +1965,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 8300000, guid: aab82a1b6fcbce049b4754b9f266dd00, type: 3}
-    - {fileID: 8300000, guid: 9fe7c35c4710e8e40bcbe402e5d6a551, type: 3}
-    - {fileID: 8300000, guid: 1849959a26e03c641b244c7262cfc879, type: 3}
-    - {fileID: 8300000, guid: 596591ab3cd9e304e901a8305c4f444e, type: 3}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: storyClips
+    - Name: branches
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-        UnityEngine.AudioModule]], mscorlib]], mscorlib
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
       Data: 0
     - Name: 
       Entry: 13
@@ -774,48 +1990,76 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!114 &-5836234516197157548
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
       Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: peaceful
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: introspective
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: lonely
     - Name: 
       Entry: 13
       Data: 
@@ -829,6 +2073,8 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!114 &-5798867817819042875
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -873,6 +2119,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isFinished
     m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3028685251703235123}
   m_Solo: 0
@@ -920,6 +2169,64 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-5708551764134550374
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4059102062257410692}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-5694307587932152826
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 2423365184380336291}
+  inHandler: {fileID: -1667783237987959747}
+  nextClip: {fileID: 0}
 --- !u!1101 &-5686085812316776573
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -941,6 +2248,111 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-5606430599872501047
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -7225097776557684717}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-5601368474178360128
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 79927f67b1564284bbdf38697b4d7ba4, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1101 &-5581256923816601390
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 1
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -6198906851977092822}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
@@ -981,6 +2393,43 @@ MonoBehaviour:
   clipBank: {fileID: 5103647415349176549}
   inHandler: {fileID: 1755359931102545702}
   nextClip: {fileID: 0}
+--- !u!114 &-5483714181096682789
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!1102 &-5399370307039958854
 AnimatorState:
   serializedVersion: 5
@@ -1039,58 +2488,36 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!114 &-5278867889328158816
-MonoBehaviour:
-  m_ObjectHideFlags: 3
+--- !u!1102 &-5275318912761828740
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 8300000, guid: ff95f6b87892aa143a283ca87b922ae8, type: 3}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: storyClips
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-        UnityEngine.AudioModule]], mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  m_Name: AA 1_1 Invalid Response 0 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 3176222820861565490}
+  m_StateMachineBehaviours:
+  - {fileID: 5044509148435594466}
+  - {fileID: -833216439826859247}
+  - {fileID: -7275610832505385804}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-5127928830603308328
 AnimatorState:
   serializedVersion: 5
@@ -1155,6 +2582,34 @@ MonoBehaviour:
   clipBank: {fileID: -2513633088506562421}
   inHandler: {fileID: -4757067935780929881}
   nextClip: {fileID: 0}
+--- !u!1101 &-4886968366106169757
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 1
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 8013758002941997921}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-4836168999246696764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1237,6 +2692,36 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1102 &-4827372692620811076
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_3 Lonely
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -7812419021134867389}
+  m_StateMachineBehaviours:
+  - {fileID: 7704062249310615914}
+  - {fileID: -4631326782997379577}
+  - {fileID: 3790393864905840784}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!114 &-4757067935780929881
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1274,9 +2759,9 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
---- !u!114 &-4544270415145251174
+--- !u!114 &-4631326782997379577
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1304,9 +2789,46 @@ MonoBehaviour:
   isWaiting: 0
   setBool: 
   waitTimer: 5
-  clipBank: {fileID: 1767876385581347923}
-  inHandler: {fileID: 1586595808390342146}
+  clipBank: {fileID: 3790393864905840784}
+  inHandler: {fileID: 7704062249310615914}
   nextClip: {fileID: 0}
+--- !u!114 &-4600873346331364932
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!114 &-4539052954433671238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1323,10 +2845,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 8300000, guid: a6b4c83c40a12ee4ab010ccc65ad2a2d, type: 3}
-    - {fileID: 8300000, guid: 7398836340c5aa34789dff4b81c2dde5, type: 3}
-    - {fileID: 8300000, guid: 1849959a26e03c641b244c7262cfc879, type: 3}
-    - {fileID: 8300000, guid: 596591ab3cd9e304e901a8305c4f444e, type: 3}
+    - {fileID: 8300000, guid: 242d3430a053640dfb46e1d372244217, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -1338,7 +2857,7 @@ MonoBehaviour:
         UnityEngine.AudioModule]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 1
     - Name: 
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
@@ -1349,54 +2868,6 @@ MonoBehaviour:
     - Name: 
       Entry: 10
       Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 3
     - Name: 
       Entry: 13
       Data: 
@@ -1440,6 +2911,36 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &-4519296196952787558
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_1 Invalid Response 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -8002286876733020541}
+  m_StateMachineBehaviours:
+  - {fileID: -6062804968222621871}
+  - {fileID: -9157399529898675531}
+  - {fileID: -5601368474178360128}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &-4506402595004740110
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1468,36 +2969,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &-4468095246199955988
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'AA 1-2 Prelude '
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -7749049918455042492}
-  m_StateMachineBehaviours:
-  - {fileID: -386732038149270027}
-  - {fileID: 8683645393428569103}
-  - {fileID: 805362167208049394}
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
-  m_Tag: Tangent
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!114 &-4417274339058569085
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1577,21 +3048,25 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
---- !u!1102 &-4311430819952879449
+--- !u!1102 &-4356129102061191767
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_2
+  m_Name: AA CYOA
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: -8777266638496953467}
+  - {fileID: 3865530614006580532}
+  - {fileID: -2481715334736822536}
+  - {fileID: 4232452372118721250}
   m_StateMachineBehaviours:
-  - {fileID: 1126382108566978727}
-  - {fileID: -2055962387462197894}
-  - {fileID: -5278867889328158816}
+  - {fileID: -5836234516197157548}
+  - {fileID: 8172506261176401705}
+  - {fileID: 1973165637215604070}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -1606,6 +3081,80 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-4328232793811763154
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1788461080974941370}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-4281663343613075408
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 619c0fa820a644467a9d05b34167d02d, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!114 &-4207844655737321861
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1622,7 +3171,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 8300000, guid: 1b69bc5d4cb6015478d1f6a100ba0491, type: 3}
+    - {fileID: 8300000, guid: f925ba70a9baf44e6b22a7516b9c75c5, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -1698,11 +3247,11 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_1 Response
+  m_Name: AA 1_2 Pre
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -3650406720583186026}
+  - {fileID: 1770066220082018114}
   m_StateMachineBehaviours:
   - {fileID: 5993305445967683020}
   - {fileID: -966376849127625153}
@@ -1806,6 +3355,39 @@ MonoBehaviour:
   clipBank: {fileID: 3641479919599073374}
   inHandler: {fileID: -1101946348065773961}
   nextClip: {fileID: 0}
+--- !u!1102 &-3846014013608298255
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_2 Makes You Feel
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -2176902464756454516}
+  - {fileID: 5999069718420072114}
+  - {fileID: -7752019962120352511}
+  - {fileID: -849918360074402821}
+  m_StateMachineBehaviours:
+  - {fileID: -1667783237987959747}
+  - {fileID: -5694307587932152826}
+  - {fileID: 2423365184380336291}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!114 &-3828314698368879428
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1858,31 +3440,91 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
---- !u!1101 &-3650406720583186026
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
+--- !u!114 &-3813047715359152073
+MonoBehaviour:
+  m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: isFinished
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -4468095246199955988}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 5914528025555548872}
+  inHandler: {fileID: -6442894871354542029}
+  nextClip: {fileID: 0}
+--- !u!114 &-3684286919990072431
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: eaddd6adfbac34225b64d01fa0aa2bd5, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!114 &-3476373869260536121
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1920,6 +3562,69 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1102 &-3464408206285549182
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_2 Pre 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -8932192392004689676}
+  m_StateMachineBehaviours:
+  - {fileID: -7636565046993284022}
+  - {fileID: 2136194162605023019}
+  - {fileID: -7095998821530501656}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!114 &-3439688212148059040
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -7234014015749094999}
+  inHandler: {fileID: -7903859007270471952}
+  nextClip: {fileID: 0}
 --- !u!1101 &-3349325674156126339
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1970,6 +3675,76 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-3301663292953222295
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!114 &-3142040356282776473
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 1456725634077722395}
+  inHandler: {fileID: 6078408986369192873}
+  nextClip: {fileID: 0}
 --- !u!114 &-3013299747313910906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2003,6 +3778,110 @@ MonoBehaviour:
   clipBank: {fileID: -992540560810656932}
   inHandler: {fileID: -4836168999246696764}
   nextClip: {fileID: 0}
+--- !u!114 &-2942703715079888317
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 08b5d6034d5e2437b83304f9ed9546eb, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!114 &-2709905590467435665
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 79927f67b1564284bbdf38697b4d7ba4, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!1102 &-2620482722775919957
 AnimatorState:
   serializedVersion: 5
@@ -2033,6 +3912,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-2544417154619252065
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -1723800713050681379}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-2513633088506562421
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2098,6 +4002,34 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1101 &-2481715334736822536
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 1
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -8750650497410925491}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-2365009721643019005
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2200,7 +4132,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -2270,6 +4202,71 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1101 &-2176902464756454516
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4519296196952787558}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-2176873005062386268
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!114 &-2110134367580643905
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2334,6 +4331,39 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!114 &-2100933221314311410
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -3684286919990072431}
+  inHandler: {fileID: -5483714181096682789}
+  nextClip: {fileID: 0}
 --- !u!114 &-2094214521837244047
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2367,7 +4397,7 @@ MonoBehaviour:
       Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 5
+      Data: 7
     - Name: 
       Entry: 1
       Data: consent
@@ -2384,6 +4414,12 @@ MonoBehaviour:
       Entry: 1
       Data: agree
     - Name: 
+      Entry: 1
+      Data: alright
+    - Name: 
+      Entry: 1
+      Data: no problem
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -2398,7 +4434,7 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
---- !u!114 &-2055962387462197894
+--- !u!114 &-2054819871469567113
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2407,7 +4443,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -2418,19 +4454,51 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  player: {fileID: 0}
-  isFinished: 0
-  incLoopOnFinish: 0
-  isInterrupted: 0
-  isGateway: 0
-  isWaiting: 0
-  setBool: 
-  waitTimer: 5
-  clipBank: {fileID: -5278867889328158816}
-  inHandler: {fileID: 1126382108566978727}
-  nextClip: {fileID: 0}
+  input: 
+  inputChecked: 0
+--- !u!1101 &-2052112739783273057
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 6613880441633151777}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-1828972561444301917
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2483,22 +4551,133 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
---- !u!1102 &-1703586057288888056
+--- !u!1102 &-1723800713050681379
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_2 Crowd
+  m_Name: AA 1_2 Pre 0 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: -2054819871469567113}
+  - {fileID: 944024926309421010}
+  - {fileID: -6315970577129635472}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!114 &-1667783237987959747
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: agitated
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: excited
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: distracted
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!1102 &-1636603446789387304
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_3 Peaceful
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -1062880740258538098}
+  - {fileID: 1545738113548872304}
   m_StateMachineBehaviours:
-  - {fileID: 1586595808390342146}
-  - {fileID: -4544270415145251174}
-  - {fileID: 1767876385581347923}
+  - {fileID: 6078408986369192873}
+  - {fileID: -3142040356282776473}
+  - {fileID: 1456725634077722395}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -2565,7 +4744,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
---- !u!114 &-1476517539512306826
+--- !u!114 &-1470660907697528859
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2574,30 +4753,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 363737846e02d42468fb1ee87e3fac63, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  player: {fileID: 0}
-  isFinished: 0
-  incLoopOnFinish: 0
-  isInterrupted: 0
-  isGateway: 0
-  isWaiting: 0
-  setBool: 
-  waitTimer: 5
-  clipBank: {fileID: 2348553557742695561}
-  inHandler: {fileID: 3981035134774657639}
-  nextClip: {fileID: 0}
 --- !u!1101 &-1446424227640827598
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2626,22 +4824,22 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-1384686991299551405
+--- !u!1101 &-1223591826939444191
 AnimatorStateTransition:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: branchSelector
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: isFinished
     m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -2
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -4059102062257410692}
+  m_DstState: {fileID: 1836723654190712969}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2691,6 +4889,34 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1101 &-1098981072597273400
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4827372692620811076}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-1067030256940954678
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2760,31 +4986,6 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
---- !u!1101 &-1062880740258538098
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: isFinished
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -6619337881770538429}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!114 &-992540560810656932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2926,6 +5127,67 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &-849918360074402821
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -6885960513041059259}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &-833216439826859247
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -7275610832505385804}
+  inHandler: {fileID: 5044509148435594466}
+  nextClip: {fileID: 0}
 --- !u!114 &-778201281800722490
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2989,43 +5251,25 @@ AnimatorStateMachine:
     m_Position: {x: 840, y: 40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7226125992364689360}
-    m_Position: {x: 2260, y: 750, z: 0}
+    m_Position: {x: 3300, y: 710, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8155242802453062515}
-    m_Position: {x: 2520, y: 750, z: 0}
+    m_Position: {x: 3540, y: 700, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4059102062257410692}
-    m_Position: {x: 3070, y: 750, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -1703586057288888056}
-    m_Position: {x: 3590, y: 750, z: 0}
+    m_Position: {x: 4510, y: 720, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8617759311782951728}
-    m_Position: {x: 2760, y: 750, z: 0}
+    m_Position: {x: 3800, y: 710, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1836723654190712969}
-    m_Position: {x: 2760, y: 820, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -4468095246199955988}
-    m_Position: {x: 3340, y: 750, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -6619337881770538429}
-    m_Position: {x: 3840, y: 750, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 7823381075883894029}
-    m_Position: {x: 3260, y: 270, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -4311430819952879449}
-    m_Position: {x: 3260, y: 360, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 3243369084001498601}
-    m_Position: {x: 3260, y: 460, z: 0}
+    m_Position: {x: 3800, y: 810, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4680285100340874034}
     m_Position: {x: 654.17615, y: 241.43011, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2620482722775919957}
-    m_Position: {x: 1090, y: 140, z: 0}
+    m_Position: {x: 1120, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8390855410390097896}
     m_Position: {x: 1250, y: 470, z: 0}
@@ -3055,7 +5299,7 @@ AnimatorStateMachine:
     m_Position: {x: 2440, y: 500, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7398572922978743557}
-    m_Position: {x: 2170, y: 350, z: 0}
+    m_Position: {x: 2180, y: 350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2294099873989215503}
     m_Position: {x: 2220, y: 630, z: 0}
@@ -3067,7 +5311,79 @@ AnimatorStateMachine:
     m_Position: {x: 2730, y: 390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3028685251703235123}
-    m_Position: {x: 2950, y: 440, z: 0}
+    m_Position: {x: 2990, y: 440, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -6644738797397824141}
+    m_Position: {x: 0, y: 0, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 6613880441633151777}
+    m_Position: {x: 4130, y: 640, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -6198906851977092822}
+    m_Position: {x: 4130, y: 720, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8033905919430599977}
+    m_Position: {x: 4130, y: 800, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 6477276907076974207}
+    m_Position: {x: 4760, y: 720, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 12399738513646594}
+    m_Position: {x: 5390, y: 650, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -6885960513041059259}
+    m_Position: {x: 5390, y: 810, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -4519296196952787558}
+    m_Position: {x: 5060, y: 820, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3846014013608298255}
+    m_Position: {x: 5060, y: 720, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3464408206285549182}
+    m_Position: {x: 5770, y: 730, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8338792930553565865}
+    m_Position: {x: 5390, y: 730, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -1723800713050681379}
+    m_Position: {x: 7090, y: 740, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7225097776557684717}
+    m_Position: {x: 6380, y: 730, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -5275318912761828740}
+    m_Position: {x: 6380, y: 830, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8013758002941997921}
+    m_Position: {x: 6710, y: 740, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -4827372692620811076}
+    m_Position: {x: 6710, y: 820, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -1636603446789387304}
+    m_Position: {x: 6710, y: 660, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 3688778092581629049}
+    m_Position: {x: 6080, y: 730, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8750650497410925491}
+    m_Position: {x: 7710, y: 1130, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -39302161981359332}
+    m_Position: {x: 8090, y: 1130, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -4356129102061191767}
+    m_Position: {x: 7380, y: 1120, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4181723801111392906}
+    m_Position: {x: 7380, y: 1220, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8549186877036276282}
+    m_Position: {x: 7710, y: 1210, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -6508340354717573284}
+    m_Position: {x: 7710, y: 1050, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -3075,9 +5391,9 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 3860, y: 410, z: 0}
+  m_ExitPosition: {x: 6220, y: 570, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -899202113534862395}
+  m_DefaultState: {fileID: -5735333131592414850}
 --- !u!114 &-529531408754940059
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -3111,16 +5427,16 @@ MonoBehaviour:
   clipBank: {fileID: 8050897045378099017}
   inHandler: {fileID: -2110134367580643905}
   nextClip: {fileID: 0}
---- !u!114 &-386732038149270027
+--- !u!114 &-503163584122088814
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -3131,19 +5447,23 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  player: {fileID: 0}
-  isFinished: 0
-  incLoopOnFinish: 0
-  isInterrupted: 0
-  isGateway: 0
-  isWaiting: 0
-  setBool: 
-  waitTimer: 5
-  clipBank: {fileID: 8683645393428569103}
-  inHandler: {fileID: 805362167208049394}
-  nextClip: {fileID: 0}
+  input: 
+  inputChecked: 0
 --- !u!114 &-339621912349023778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3181,6 +5501,31 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1101 &-159885495340796755
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -39302161981359332}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-69447221970177402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3233,6 +5578,35 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1102 &-39302161981359332
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_2 Pre 0 0 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: 9195339298142979577}
+  - {fileID: 9049718029960768600}
+  - {fileID: -2942703715079888317}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -3247,49 +5621,49 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: branchSelector
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: -1
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isSilent
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: loopCounter
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: charitable
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: healthy
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
-    m_Controller: {fileID: 0}
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: pioneer
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
-    m_Controller: {fileID: 0}
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: loved
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -3399,22 +5773,46 @@ MonoBehaviour:
         mscorlib]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 1
       Data: happy
     - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
       Entry: 1
       Data: wistful
     - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
       Entry: 1
-      Data: thankful
+      Data: irritable
     - Name: 
       Entry: 13
       Data: 
@@ -3430,6 +5828,36 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1102 &12399738513646594
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_2 Agitated
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 6715421588288606324}
+  m_StateMachineBehaviours:
+  - {fileID: -6246231596116719733}
+  - {fileID: -6299526132216970273}
+  - {fileID: -1470660907697528859}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &227574402336576974
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3458,6 +5886,39 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &262173067411078178
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -6196477877094830526}
+  inHandler: {fileID: -3301663292953222295}
+  nextClip: {fileID: 0}
 --- !u!1101 &286498238252058635
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3532,8 +5993,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 8300000, guid: 1849959a26e03c641b244c7262cfc879, type: 3}
-    - {fileID: 8300000, guid: 308d7c5b3357194418fa3a630bae013a, type: 3}
+    - {fileID: 8300000, guid: 06c5cfb57137d47ef9d6349439504cd0, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -3545,7 +6005,7 @@ MonoBehaviour:
         UnityEngine.AudioModule]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
@@ -3556,22 +6016,6 @@ MonoBehaviour:
     - Name: 
       Entry: 10
       Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 1
     - Name: 
       Entry: 13
       Data: 
@@ -3671,9 +6115,9 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!114 &805362167208049394
+--- !u!114 &534832375878522795
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3815,7 +6259,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &1126382108566978727
+--- !u!114 &944024926309421010
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3824,7 +6268,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -3835,23 +6279,52 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: branches
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
-        mscorlib]], mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  input: 
-  inputChecked: 0
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -6315970577129635472}
+  inHandler: {fileID: -2054819871469567113}
+  nextClip: {fileID: 0}
+--- !u!114 &986094336229977600
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 6967951186233349457}
+  inHandler: {fileID: -6103827742967251611}
+  nextClip: {fileID: 0}
 --- !u!114 &1311794478221616234
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -3904,43 +6377,6 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
---- !u!114 &1326629110765681433
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: branches
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
-        mscorlib]], mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  input: 
-  inputChecked: 0
 --- !u!1101 &1345269612679208614
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3969,6 +6405,58 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &1373654702055862646
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 06c5cfb57137d47ef9d6349439504cd0, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!1101 &1455997581021362072
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -3994,6 +6482,58 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &1456725634077722395
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: c711c860456cf499aa44df65d099d763, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!114 &1538218524695657305
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4043,9 +6583,34 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
---- !u!114 &1586595808390342146
-MonoBehaviour:
+--- !u!1101 &1545738113548872304
+AnimatorStateTransition:
   m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -1723800713050681379}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &1607292043398363627
+MonoBehaviour:
+  m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4070,7 +6635,19 @@ MonoBehaviour:
         mscorlib]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
       Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -4247,58 +6824,31 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
---- !u!114 &1767876385581347923
-MonoBehaviour:
+--- !u!1101 &1770066220082018114
+AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 8300000, guid: ff95f6b87892aa143a283ca87b922ae8, type: 3}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: storyClips
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-        UnityEngine.AudioModule]], mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 6477276907076974207}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &1788461080974941370
 AnimatorState:
   serializedVersion: 5
@@ -4330,6 +6880,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &1812926999708573648
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 7226125992364689360}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &1836723654190712969
 AnimatorState:
   serializedVersion: 5
@@ -4418,70 +6993,7 @@ MonoBehaviour:
   clipBank: {fileID: 5738470121865246092}
   inHandler: {fileID: 6986294907127294753}
   nextClip: {fileID: 0}
---- !u!114 &2116553972239610077
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  player: {fileID: 0}
-  isFinished: 0
-  incLoopOnFinish: 0
-  isInterrupted: 0
-  isGateway: 0
-  isWaiting: 0
-  setBool: 
-  waitTimer: 5
-  clipBank: {fileID: -2365009721643019005}
-  inHandler: {fileID: 4670956214512880937}
-  nextClip: {fileID: 0}
---- !u!1102 &2294099873989215503
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WYR 2 Personal Answers
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 6488437089305810686}
-  m_StateMachineBehaviours:
-  - {fileID: 5718055027101869511}
-  - {fileID: -4039233733561234604}
-  - {fileID: 2480383623915907089}
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!114 &2348553557742695561
+--- !u!114 &1973165637215604070
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4497,7 +7009,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 8300000, guid: ff95f6b87892aa143a283ca87b922ae8, type: 3}
+    - {fileID: 8300000, guid: 8ba096fd416b347d4a44b898242f1c9c, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -4533,6 +7045,301 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!114 &2116553972239610077
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -2365009721643019005}
+  inHandler: {fileID: 4670956214512880937}
+  nextClip: {fileID: 0}
+--- !u!114 &2136194162605023019
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -7095998821530501656}
+  inHandler: {fileID: -7636565046993284022}
+  nextClip: {fileID: 0}
+--- !u!114 &2218358778772638732
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 363737846e02d42468fb1ee87e3fac63, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1102 &2294099873989215503
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WYR 2 Personal Answers
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 6488437089305810686}
+  m_StateMachineBehaviours:
+  - {fileID: 5718055027101869511}
+  - {fileID: -4039233733561234604}
+  - {fileID: 2480383623915907089}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!114 &2412370719420902992
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!114 &2423365184380336291
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 265341a4d3a504cc7b6af0016ff23e72, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1101 &2423962021505466458
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4356129102061191767}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &2443834872702432959
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 5015134567783356359}
+  inHandler: {fileID: -5851396076822857610}
+  nextClip: {fileID: 0}
 --- !u!114 &2480383623915907089
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -4570,6 +7377,34 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1101 &2497186815153041664
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1836723654190712969}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &2503041403392989644
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -4703,6 +7538,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &2948145528996728052
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3464408206285549182}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &2996738904974154341
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -4750,7 +7610,8 @@ AnimatorState:
   m_Name: WYR_1-3 Outro
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1812926999708573648}
   m_StateMachineBehaviours:
   - {fileID: 8308429575167375442}
   - {fileID: 1762461910732700487}
@@ -4854,35 +7715,141 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
---- !u!1102 &3243369084001498601
-AnimatorState:
-  serializedVersion: 5
+--- !u!1101 &3176222820861565490
+AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_2 3
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: 3981035134774657639}
-  - {fileID: -1476517539512306826}
-  - {fileID: 2348553557742695561}
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -7225097776557684717}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &3268538297722854102
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 3807155400726309459}
+  inHandler: {fileID: -4600873346331364932}
+  nextClip: {fileID: 0}
+--- !u!1101 &3289806501961487369
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4059102062257410692}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &3332361963917449718
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: c8ccc10f8d182486f8b2a0ff468d5da5, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!114 &3500259460578527885
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -4932,7 +7899,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 8300000, guid: 1aa6da74e5a2f2d46989541192282787, type: 3}
+    - {fileID: 8300000, guid: 5ba13e4108c9440e9b37bbf872a4e61f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -4968,6 +7935,36 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1102 &3688778092581629049
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_2 Clip 1
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -5606430599872501047}
+  m_StateMachineBehaviours:
+  - {fileID: -4600873346331364932}
+  - {fileID: 3268538297722854102}
+  - {fileID: 3807155400726309459}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &3713714582072410778
 AnimatorState:
   serializedVersion: 5
@@ -4998,7 +7995,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &3981035134774657639
+--- !u!114 &3790393864905840784
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5007,24 +8004,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 619c0fa820a644467a9d05b34167d02d, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: branches
+    - Name: storyClips
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
-        mscorlib]], mscorlib]], mscorlib
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
       Data: 0
     - Name: 
       Entry: 13
@@ -5032,9 +8040,93 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  input: 
-  inputChecked: 0
+--- !u!114 &3807155400726309459
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 06c5cfb57137d47ef9d6349439504cd0, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1101 &3865530614006580532
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -6508340354717573284}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &4172255325917293331
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5087,6 +8179,64 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1102 &4181723801111392906
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_1 Invalid Response 0 0 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 2423962021505466458}
+  m_StateMachineBehaviours:
+  - {fileID: 1607292043398363627}
+  - {fileID: 6283841436895375277}
+  - {fileID: -2709905590467435665}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1101 &4232452372118721250
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 8549186877036276282}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &4235344368433543825
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5345,6 +8495,58 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!114 &4894257897475206478
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: d6f6438af8ec740c5bbf808f970ad5d3, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!114 &4918859493351053251
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5415,6 +8617,135 @@ MonoBehaviour:
   clipBank: {fileID: 842175155773220555}
   inHandler: {fileID: 1652245957682993915}
   nextClip: {fileID: 0}
+--- !u!1101 &4995040773396784684
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1836723654190712969}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &5015134567783356359
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: cc36f07f7356c47f183466fc8fcfdb99, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!114 &5044509148435594466
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!114 &5103647415349176549
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5480,6 +8811,39 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!114 &5112339758730984099
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 4894257897475206478}
+  inHandler: {fileID: 2412370719420902992}
+  nextClip: {fileID: 0}
 --- !u!114 &5142161257457875106
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5526,6 +8890,34 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -899202113534862395}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &5385094808680262772
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4059102062257410692}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -5711,6 +9103,106 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &5914528025555548872
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 242d3430a053640dfb46e1d372244217, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!114 &5993305445967683020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5748,7 +9240,35 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
---- !u!114 &6041133488253011422
+--- !u!1101 &5999069718420072114
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 12399738513646594}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &6078408986369192873
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5785,6 +9305,39 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!114 &6116205033493520063
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 3332361963917449718}
+  inHandler: {fileID: 534832375878522795}
+  nextClip: {fileID: 0}
 --- !u!114 &6205180234841105966
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5822,6 +9375,122 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1101 &6242396345531411774
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -39302161981359332}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &6273087916182546205
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3846014013608298255}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &6283841436895375277
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -2709905590467435665}
+  inHandler: {fileID: 1607292043398363627}
+  nextClip: {fileID: 0}
+--- !u!114 &6352672537638978613
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 2218358778772638732}
+  inHandler: {fileID: -503163584122088814}
+  nextClip: {fileID: 0}
 --- !u!1101 &6440503299802592151
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5853,6 +9522,36 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &6477276907076974207
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_2 Clip
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 6273087916182546205}
+  m_StateMachineBehaviours:
+  - {fileID: 9007061234887695830}
+  - {fileID: -6923343238457428110}
+  - {fileID: 1373654702055862646}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &6488437089305810686
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5906,6 +9605,61 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &6613880441633151777
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_1 Happy
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -5708551764134550374}
+  m_StateMachineBehaviours:
+  - {fileID: -503163584122088814}
+  - {fileID: 6352672537638978613}
+  - {fileID: 2218358778772638732}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1101 &6715421588288606324
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3464408206285549182}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &6794453628045761919
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5939,6 +9693,83 @@ MonoBehaviour:
   clipBank: {fileID: 8486322516730954114}
   inHandler: {fileID: 1538218524695657305}
   nextClip: {fileID: 0}
+--- !u!1101 &6882185458226050440
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 0}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &6967951186233349457
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 483eae14654cd4a10ab18e0ee29444f1, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: storyClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!114 &6986294907127294753
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -6120,7 +9951,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_1 Prelude
+  m_Name: AA Intro
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -6176,58 +10007,34 @@ MonoBehaviour:
   clipBank: {fileID: 1158225907714400}
   inHandler: {fileID: -4417274339058569085}
   nextClip: {fileID: 0}
---- !u!114 &7481438780935525919
-MonoBehaviour:
-  m_ObjectHideFlags: 3
+--- !u!1101 &7437705855236458292
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 8300000, guid: ff95f6b87892aa143a283ca87b922ae8, type: 3}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: storyClips
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-        UnityEngine.AudioModule]], mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: 2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -8033905919430599977}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &7568507005423852201
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6302,7 +10109,7 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
---- !u!114 &7718856757868164329
+--- !u!114 &7704062249310615914
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6311,7 +10118,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -6322,19 +10129,23 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
-  player: {fileID: 0}
-  isFinished: 0
-  incLoopOnFinish: 0
-  isInterrupted: 0
-  isGateway: 0
-  isWaiting: 0
-  setBool: 
-  waitTimer: 5
-  clipBank: {fileID: -5932115091152840244}
-  inHandler: {fileID: 1326629110765681433}
-  nextClip: {fileID: 0}
+  input: 
+  inputChecked: 0
 --- !u!1102 &7760291364406519081
 AnimatorState:
   serializedVersion: 5
@@ -6364,35 +10175,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &7823381075883894029
-AnimatorState:
-  serializedVersion: 5
+--- !u!1101 &7909693348877402174
+AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_2 5
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: 6041133488253011422}
-  - {fileID: -7582265424109360420}
-  - {fileID: 7481438780935525919}
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4059102062257410692}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &7950299602877961052
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -6430,6 +10237,36 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
   input: 
   inputChecked: 0
+--- !u!1102 &8013758002941997921
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_3 Introspective
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -2544417154619252065}
+  m_StateMachineBehaviours:
+  - {fileID: -7903859007270471952}
+  - {fileID: -3439688212148059040}
+  - {fileID: -7234014015749094999}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!114 &8050897045378099017
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -6519,7 +10356,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AA 1_1
+  m_Name: AA 1_1 Clip
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -6542,6 +10379,39 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &8172506261176401705
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: 1973165637215604070}
+  inHandler: {fileID: -5836234516197157548}
+  nextClip: {fileID: 0}
 --- !u!114 &8241912657790092155
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6608,6 +10478,36 @@ MonoBehaviour:
   clipBank: {fileID: 1762461910732700487}
   inHandler: {fileID: 2579931580375190509}
   nextClip: {fileID: 0}
+--- !u!1102 &8338792930553565865
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_2 Excited
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 2948145528996728052}
+  m_StateMachineBehaviours:
+  - {fileID: 534832375878522795}
+  - {fileID: 6116205033493520063}
+  - {fileID: 3332361963917449718}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &8390855410390097896
 AnimatorState:
   serializedVersion: 5
@@ -6657,6 +10557,34 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &8452837169550206264
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: branchSelector
+    m_EventTreshold: -2
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1836723654190712969}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
@@ -6716,6 +10644,36 @@ MonoBehaviour:
       Entry: 8
       Data: 
   gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+--- !u!1102 &8549186877036276282
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AA 1_3 Lonely 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 6242396345531411774}
+  m_StateMachineBehaviours:
+  - {fileID: -2176873005062386268}
+  - {fileID: 9214053409417414264}
+  - {fileID: -4281663343613075408}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &8558164454769190862
 AnimatorState:
   serializedVersion: 5
@@ -6754,7 +10712,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFinished
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -899202113534862395}
   m_Solo: 0
@@ -6780,8 +10741,10 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -1384686991299551405}
   - {fileID: -1446424227640827598}
+  - {fileID: -2052112739783273057}
+  - {fileID: -5581256923816601390}
+  - {fileID: 7437705855236458292}
   m_StateMachineBehaviours:
   - {fileID: 9671410221722869}
   - {fileID: 8241912657790092155}
@@ -6800,58 +10763,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &8683645393428569103
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7fb4aa15b3afd4e90d9769f233e1b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 8300000, guid: afcb94b183fc68245b53d7b58984d9ab, type: 3}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: storyClips
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-        UnityEngine.AudioModule]], mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
 --- !u!1101 &8709113269211075252
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6999,6 +10910,43 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &9007061234887695830
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
 --- !u!1101 &9044511958944754879
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -7023,6 +10971,61 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!114 &9049718029960768600
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -2942703715079888317}
+  inHandler: {fileID: 9195339298142979577}
+  nextClip: {fileID: 0}
+--- !u!1101 &9075956545271915766
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 0}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -7101,7 +11104,8 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 8300000, guid: f693b3631936bd44188fc9d148c61c26, type: 3}
+    - {fileID: 8300000, guid: f486baaadfa084c71b11c21478067b0d, type: 3}
+    - {fileID: 8300000, guid: 931b883f3d8ad4f5a8fb9a1807aefe93, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -7113,7 +11117,7 @@ MonoBehaviour:
         UnityEngine.AudioModule]], mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
@@ -7124,6 +11128,22 @@ MonoBehaviour:
     - Name: 
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[UnityEngine.AudioClip, UnityEngine.AudioModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
     - Name: 
       Entry: 13
       Data: 
@@ -7194,3 +11214,73 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &9195339298142979577
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac26cd102fe4874abe9a7a27327fd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: branches
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.String,
+        mscorlib]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  input: 
+  inputChecked: 0
+--- !u!114 &9214053409417414264
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b11223a2f99d9419f9ec535459eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  gameState: {fileID: 11400000, guid: 75e18a62ec7cfd041b62bd1105119468, type: 2}
+  player: {fileID: 0}
+  isFinished: 0
+  incLoopOnFinish: 0
+  isInterrupted: 0
+  isGateway: 0
+  isWaiting: 0
+  setBool: 
+  waitTimer: 5
+  clipBank: {fileID: -4281663343613075408}
+  inHandler: {fileID: -2176873005062386268}
+  nextClip: {fileID: 0}
