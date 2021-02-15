@@ -51,14 +51,17 @@ public class PathModule : SerializedStateMachineBehaviour
         if (isFinished)
         {
             animator.SetBool("isFinished", true);
-            if (incLoopOnFinish)
-                animator.SetInteger("loopCounter", animator.GetInteger("loopCounter") + 1); //inc loopCounter
+            
         }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (incLoopOnFinish){            
+                animator.SetInteger("loopCounter", animator.GetInteger("loopCounter") + 1); //inc loopCounter
+                Debug.Log("Loop finished. Incrementing to: " + animator.GetInteger("loopCounter"));
+        }
         gameState.SetInput(null);
         Debug.Log("Resetting trigger: isFinished");
         animator.SetBool("isFinished", false);
